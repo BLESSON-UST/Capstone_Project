@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" (click)="displayDetails()">Display Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="displayEnrolledCourses()">Enrolled Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="logout()">Log Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Main content -->
+      <div class="col-md-9">
+        <div class="main-content">
+          <h1>Welcome, {{ username }}!</h1>
+          <!-- Search bar -->
+          <div class="search-bar">
+            <input type="text" class="form-control" [(ngModel)]="searchText" (input)="searchCourses()" placeholder="Search for courses">
+          </div>
+          <!-- Enrolled courses -->
+          <h3>Your Enrolled Courses</h3>
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let course of enrolledCourses">{{ course }}</li>
+          </ul>
+          <!-- Available courses -->
+          <h3>Available Courses</h3>
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let course of availableCourses">{{ course }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
