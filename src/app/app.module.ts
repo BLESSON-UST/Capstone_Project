@@ -14,6 +14,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 import { UserdashboardComponent } from './userdashboard/userdashboard.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { CourseformComponent } from './courseform/courseform.component';
+import { EditcourseComponent } from './editcourse/editcourse.component';
 
 
 
@@ -30,6 +32,8 @@ import { ContactusComponent } from './contactus/contactus.component';
     AdminComponent,
     UserdashboardComponent,
     ContactusComponent,
+    CourseformComponent,
+    EditcourseComponent,
  
   ],
   imports: [
