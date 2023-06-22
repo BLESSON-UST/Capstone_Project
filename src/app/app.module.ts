@@ -16,6 +16,7 @@ import { UserdashboardComponent } from './userdashboard/userdashboard.component'
 import { ContactusComponent } from './contactus/contactus.component';
 import { CourseformComponent } from './courseform/courseform.component';
 import { EditcourseComponent } from './editcourse/editcourse.component';
+import { CoursePageComponent } from './course-page/course-page.component';
 
 
 
@@ -34,6 +35,7 @@ import { EditcourseComponent } from './editcourse/editcourse.component';
     ContactusComponent,
     CourseformComponent,
     EditcourseComponent,
+    CoursePageComponent,
  
   ],
   imports: [

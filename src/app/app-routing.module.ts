@@ -9,6 +9,7 @@ import { UserdashboardComponent } from './userdashboard/userdashboard.component'
 import { ContactusComponent } from './contactus/contactus.component';
 import { CourseformComponent } from './courseform/courseform.component';
 import { EditcourseComponent } from './editcourse/editcourse.component';
+import { CoursePageComponent } from './course-page/course-page.component';
 
 const routes: Routes = [
   {path: 'Home', component:HomeComponent},
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'Contact',component:ContactusComponent},
   {path: 'addcourse',component:CourseformComponent},
   {path: 'editcourse',component:EditcourseComponent},
+  {path: 'course/:courseId',component:CoursePageComponent},
   { path: '', redirectTo: 'Home', pathMatch: 'full'}
 ];
 

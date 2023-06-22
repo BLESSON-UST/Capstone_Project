@@ -4,6 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { SignupService } from '../signup.service';
 
 interface Course {
+  courseId:number;
   title: string;
   description: string;
 }
@@ -76,11 +77,16 @@ export class UserdashboardComponent implements OnInit {
   logout(): void {
     // Clear the token from localStorage and redirect to the login page
     localStorage.removeItem('token');
-    this.router.navigate(['/login']);
+    this.router.navigate(['/Login']);
   }
 
   searchCourses(): void {
     // TODO: Implement the search functionality based on the searchText value
     console.log('Search for courses:', this.searchText);
+  }
+
+  navigateToCourse(courseId: number) {
+    // Navigate to the course page using the provided course ID
+    this.router.navigate(['/course', courseId]);
   }
 }
